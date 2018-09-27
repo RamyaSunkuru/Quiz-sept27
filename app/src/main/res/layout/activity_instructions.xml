@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:layout_marginLeft="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInstructions"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:paddingStart="16dp"
+        android:textSize="18dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorAccent"
+        android:text="Instructions"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instruction_one"
+        android:textColor="#000000"
+        android:layout_below="@id/textInstructions"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:text="1.  Test consists of 10 questions fo 30 marks"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/instruction_two"
+        android:layout_below="@id/instruction_one"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:text="2.  Each question has  one correct option"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instruction_three"
+        android:textColor="#000000"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@id/instruction_two"
+        android:text="3.  Time limit of 10 mins."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:id="@+id/instruction_four"
+        android:layout_below="@id/instruction_three"
+        android:text="4.  Previous answers cannot be changed"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instruction_five"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@id/instruction_four"
+        android:textColor="#000000"
+        android:text="5.  Questions 1-4 carries 2 marks , 5-8 carries 3 marks ,9-10 carries 5 marks each."/>
+
+
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/instruction_four"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/curved_edges"
+        android:layout_marginTop="167dp"
+        android:textColor="#ffffff"
+        android:text="Take test" />
+
+</RelativeLayout>
